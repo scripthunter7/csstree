@@ -12,6 +12,8 @@ Interactively explore the AST with [AST Explorer](https://astexplorer.net/#/gist
     - [loc](#loc)
     - [children](#children)
 - [Node types](#node-types)
+    - [AdblockRawParam](#adblockrawparam)
+    - [AdblockXpathParam](#adblockxpathparam)
     - [AnPlusB](#anplusb)
     - [Atrule](#atrule)
     - [AtrulePrelude](#atruleprelude)
@@ -178,6 +180,24 @@ Most node types always store an instance of the `List` in this property, even if
 > NOTE: Despite every node has a `loc` property, this property is excluded from definitions to reduce a noise.
 
 <!-- node types -->
+
+### AdblockRawParam
+
+```js
+{
+    type: "AdblockRawParam",
+    name: String
+}
+```
+
+### AdblockXpathParam
+
+```js
+{
+    type: "AdblockXpathParam",
+    name: String
+}
+```
 
 ### AnPlusB
 
